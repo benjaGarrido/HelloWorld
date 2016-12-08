@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  OtherViewController.swift
 //  HelloWorld
 //
 //  Created by Benjamín Garrido Barreiro on 8/12/16.
@@ -8,22 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBOutlet weak var lblHelloWorld: UILabel!
-    
-    @IBAction func btnChange(_ sender: UIButton) {
-        if let text = lblHelloWorld.text {
-            print(text)
-        }
-    }
-    
+class OtherViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         // Cuando va a aparecer
         super.viewWillAppear(animated)
         print("viewWillAppear")
-        lblHelloWorld.text = "Hola Benja!"
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -53,7 +44,8 @@ class ViewController: UIViewController {
         print("didReceiveMemoryWarning")
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
+
 
