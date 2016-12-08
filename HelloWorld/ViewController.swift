@@ -9,19 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var lblHelloWorld: UILabel!
-    
-    @IBAction func btnChange(_ sender: UIButton) {
-        if let text = lblHelloWorld.text {
-            print(text)
-        }
-    }
-    
+        
     override func viewWillAppear(_ animated: Bool) {
         // Cuando va a aparecer
         super.viewWillAppear(animated)
         print("viewWillAppear")
-        lblHelloWorld.text = "Hola Benja!"
     }
 
     override func viewDidLoad() {
